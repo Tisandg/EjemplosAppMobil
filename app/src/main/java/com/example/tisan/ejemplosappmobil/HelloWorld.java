@@ -22,10 +22,19 @@ public class HelloWorld extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        actualizarHora();
+        switch (v.getId()){
+            case R.id.boton:
+                //actualizarHora();
+                mensajeBienvenida();
+                break;
+        }
     }
 
     public void actualizarHora(){
         btn.setText(new Date().toString());
+    }
+
+    public void mensajeBienvenida(){
+        btn.setText("Bienvenido a tu primera Aplicacion");
     }
 }
