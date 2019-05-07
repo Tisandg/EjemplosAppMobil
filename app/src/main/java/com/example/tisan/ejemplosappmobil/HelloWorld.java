@@ -15,9 +15,9 @@ public class HelloWorld extends AppCompatActivity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hello_world);
-        btn = (Button) findViewById(R.id.boton);
-        actualizarHora();
+        btn = findViewById(R.id.boton);
         btn.setOnClickListener(this);
+        //actualizarHora();
     }
 
     @Override
