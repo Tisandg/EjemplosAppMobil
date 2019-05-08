@@ -17,15 +17,14 @@ public class HelloWorld extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_hello_world);
         btn = findViewById(R.id.boton);
         btn.setOnClickListener(this);
-        //actualizarHora();
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.boton:
-                //actualizarHora();
-                mensajeBienvenida();
+                actualizarHora();
+                //mensajeBienvenida();
                 break;
         }
     }
